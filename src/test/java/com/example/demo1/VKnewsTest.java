@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class VKnewsTest {
     @Test
-    public static void main(String[] args){
+    public void vktest(){
 
         WebDriver driver = new ChromeDriver();
 
@@ -34,7 +34,7 @@ public class VKnewsTest {
 
         WebElement password = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[2]/div/form/div[1]/div[3]/div[2]/div[1]/div/input"));
         password.click();
-        password.sendKeys("604375B1ackY");
+        password.sendKeys("");
 
     }
 }
