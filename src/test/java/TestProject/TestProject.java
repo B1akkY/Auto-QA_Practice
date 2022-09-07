@@ -22,6 +22,12 @@ public class TestProject {
     public void setUp() {
 
         driver.get("https://example.ru/login");
+        try {
+            Thread.sleep(2000);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
     }
 
     @Test
@@ -279,12 +285,6 @@ public class TestProject {
 
     @AfterEach
     public void close(){
-
-        try {
-            Thread.sleep(1000);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
 
         driver.quit();
 
